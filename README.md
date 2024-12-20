@@ -48,7 +48,9 @@ In this section of the code, I have calculated a new variable called "Europe and
        <dbl>      <dbl>
 1        1.23       0.523
 ### Problem 14: -
-I utilized the ggplot package to create a scatter plot, providing information about the mean happiness and mean freedom of each region. I achieved this by utilizing the "regional_stats_df" data frame, which was generated through the group by function applied to the "region" variable in the original data frame.
+I used the ggplot2 package to create a scatter plot that visualizes the relationship between the mean happiness and mean freedom for each region. The data for this plot was extracted from the regional_stats_df data frame, which was created by grouping the original data frame by the "region" variable and calculating the mean happiness and freedom for each group.
+Here’s the resulting scatter plot:
+
 ![image](https://github.com/user-attachments/assets/5ec54d66-47e5-44f6-83aa-10068c7c93d8)
 
 ## Part-2: - Baseball analysis
