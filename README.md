@@ -5,9 +5,9 @@ In this project, I worked with two datasets and performed various functions and 
 ## Part-1: - Countries GPD
 ### Problem 5: -
 In this code, I have loaded the janitor package, in which I have used the "clean_names" function. Janitor is used for initial data exploration and cleaning, particularly for restructuring the data frame and addressing problematic variable names.
-# Clean column names for better structure of the data frame
+#### Clean column names for better structure of the data frame
 data_2015 <- clean_names(data_2015)
-# A tibble: 158 × 13
+#### A tibble: 158 × 13
    country      region     happiness_rank happiness_score standard_error economy_gdp_per_capita family health_life_expectancy
    <chr>        <chr>                 <dbl>           <dbl>           <dbl>                  <dbl> <dbl>                  <dbl>
  1 Switzerland  Western Europe          1             7.59            0.0341                  1.40  1.35                  0.941
@@ -20,12 +20,12 @@ data_2015 <- clean_names(data_2015)
  8 Sweden       Western Europe          8             7.36            0.0316                  1.33  1.29                  0.911
  9 New Zealand  Australia & NZ          9             7.29            0.0337                  1.25  1.32                  0.908
 10 Australia    Australia & NZ         10             7.28            0.0408                  1.33  1.31                  0.932
-# ℹ 148 more rows
-# ℹ 5 more variables: freedom <dbl>, trust_government_corruption <dbl>, generosity <dbl>, dystopia_residual <dbl>, gff_stat <dbl>
+#### ℹ 148 more rows
+#### ℹ 5 more variables: freedom <dbl>, trust_government_corruption <dbl>, generosity <dbl>, dystopia_residual <dbl>, gff_stat <dbl>
 
 ### Problem 11: -
 In this code, I have utilized the pipeline operator "%>%" to efficiently execute multiple operators. This operator is a component of the dplyr package. Additionally, I have employed the "summarize" and "mutate" functions within the code.
-# Summary of the happiness data, calculating mean and max values for happiness score and freedom
+#### Summary of the happiness data, calculating mean and max values for happiness score and freedom
 happy_summary <- happy_df %>%
   summarise(
     mean_happiness = mean(happiness_score),
@@ -34,16 +34,16 @@ happy_summary <- happy_df %>%
     max_freedom = max(freedom)
   )
 
-# View the summary data
+#### View the summary data
 happy_summary
-# A tibble: 1 × 4
+#### A tibble: 1 × 4
   mean_happiness max_happiness mean_freedom max_freedom
             <dbl>          <dbl>         <dbl>       <dbl>
 1            5.38           7.59         0.429       0.670
 ### Problem 13: -
 In this section of the code, I have calculated a new variable called "Europe and Africa" and then separately computed their respective GDPs based on the economy's GDP per capita.
 
-# A tibble: 1 × 2
+#### A tibble: 1 × 2
   europe_gdp africa_gdp
        <dbl>      <dbl>
 1        1.23       0.523
