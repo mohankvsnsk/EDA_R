@@ -73,6 +73,7 @@ I utilized the ggplot package to create a scatter plot, providing information ab
 ![image](https://github.com/user-attachments/assets/19aff4a6-06d1-488e-8905-add8219ad95d)
 ### Problem 13: -
 I generated a histogram representing batting averages with a binwidth of 0.025. The histogram is displayed in blue with a green fill.
+
 ![image](https://github.com/user-attachments/assets/41b7b4d5-f681-4e63-8422-71bfc5625a75)
 ### Problem 17 & 18 : -
 I have created a MVP candidates list and used rank function to sort using HR, RBI and OBP. I have calculated total rank= (RankHR + RankRBI + RankOBP). Created two new datasets “mvp_candidates” & “mvp_candidates_abbreviated”.
